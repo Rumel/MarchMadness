@@ -4,6 +4,17 @@ the winner of this years tournament.
 The data is being taken from www.kenpom.com and pasted into an excel spreadsheet.
 I then trim it to the tournament teams and make that into a csv file.
 
+Once the data is ready I run it through the AnalyzeData.py file and it outputs a list showing
+how many times a column ranks higher then the other column for the winning team.
+
+The usage of the program should be:
+
+python AnalyzeData.py TourneyFile.txt BasketballTeams.csv
+
+this is also recommend
+
+python AnalyzeData.py TourneyFile.txt BasketballTeams.csv > Output.csv
+
 NOTES:
 I'm running a sed script on the csv file I make to get the wins and losses from 34-3 to 34,3
 I achieve this with the following sed script
