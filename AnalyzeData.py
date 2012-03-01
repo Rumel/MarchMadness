@@ -24,10 +24,12 @@ teamFile = sys.argv[2]
 
 teamF = open(teamFile, 'r')
 teams = []
+lineCount = 0
 for line in teamF:
-	t = line.split(',')
-	teams.append(t)
-	
+	if(lineCount != 0 or lineCount != 1):
+		t = line.split(',')
+		teams.append(t)
+	lineCount = lineCount + 1
 teamF.close()
 
 tournF = open(tournamentFile, 'r')
