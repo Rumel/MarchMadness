@@ -29,7 +29,7 @@ for line in teamF:
 teamF.close()
 
 tournF = open(tournamentFile, 'r')
-for line in tournF:ca
+for line in tournF:
 	game = line.split(' ')
 	if(game[2] == game[0]):
 		findStats(teams[int(game[0])], teams[int(game[1])])
