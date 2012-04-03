@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import sys
 
+#array holding the categories that beat the other team
 winningNumbers = []
 
 def findStats(team1, team2):
@@ -12,11 +13,6 @@ def findStats(team1, team2):
 				winningNumbers.append(i)
 			else:
 				None
-	
-	if(team1[16] >= team2[18]):
-		winningNumbers.append(22)
-	if(team1[6] <= team2[8]):
-		winningNumbers.append(23)
 	return
 
 tournamentFile = sys.argv[1]
@@ -33,7 +29,7 @@ for line in teamF:
 teamF.close()
 
 tournF = open(tournamentFile, 'r')
-for line in tournF:
+for line in tournF:ca
 	game = line.split(' ')
 	if(game[2] == game[0]):
 		findStats(teams[int(game[0])], teams[int(game[1])])

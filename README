@@ -11,7 +11,7 @@ The usage of the program should be:
 
 python AnalyzeData.py TourneyFile.txt BasketballTeams.csv
 
-this is also recommend
+this is also recommended
 
 python AnalyzeData.py TourneyFile.txt BasketballTeams.csv > Output.csv
 
