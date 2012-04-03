@@ -44,4 +44,8 @@ for line in tournF:
 
 #counts the instance of a number to help find a correlation between winning in the tournament and stats		
 for i in range(0, 22):
-	print i, "," , winningNumbers.count(i)
+	#Skips printing 0 or 2 since they are never used
+	if(i == 0 or i == 2):
+			None
+	else:
+		print i, "," , winningNumbers.count(i)
